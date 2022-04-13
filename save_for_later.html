@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Nutrition</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="./stylesheet.css" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="./health_and_fitness.js"></script>
+    </head>
+
+    <body>
+        <!-- Navigation bar containing links to different webpages of the website. -->
+        <div class="navbar">
+            <img src="https://cutewallpaper.org/24/dumbbell-png/bodybuilding-and-dumbbells-vector-image-illustration-dumbbell-clipart-no-background-png-download-542135-pinclipart.png" alt="Dumbbell PNG">
+            
+            <nav>
+                <a href="./index.html">Weights</a>
+                <a href="./cardio.html">Cardio</a>
+                <a href="./nutrition.html">Nutrition</a>
+                <a href="./contact_us.html">Contact Us</a>
+                <a href="./save_for_later.html">Saved Items</a>
+            </nav>
+        </div>
+
+        <!-- Clears the float. -->
+        <div class="clearfix"></div>
+
+        <!-- Main content containing all saved items. -->
+        <div class="mainContent">
+            <h1>Health & Fitness</h1><br>
+            <p>
+                Welcome to your saved items folder. Please view your saved items below:
+            </p>
+            
+            <h2>Saved Items</h2>
+            <br>
+            <!-- Any items from any of the other pages are appended and saved here. -->
+            <div id="savedItems"></div>
+        </div>
+    </body>
+</html>

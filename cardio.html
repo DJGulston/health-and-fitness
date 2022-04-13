@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Cardio</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="./stylesheet.css" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="./health_and_fitness.js"></script>
+    </head>
+
+    <body>
+        <!-- Navigation bar containing image and links to different webpages of the website. -->
+        <div class="navbar">
+            <img src="https://cutewallpaper.org/24/dumbbell-png/bodybuilding-and-dumbbells-vector-image-illustration-dumbbell-clipart-no-background-png-download-542135-pinclipart.png" alt="Dumbbell PNG">
+
+            <nav>
+                <a href="./index.html">Weights</a>
+                <a href="./cardio.html">Cardio</a>
+                <a href="./nutrition.html">Nutrition</a>
+                <a href="./contact_us.html">Contact Us</a>
+                <a href="./save_for_later.html">Saved Items</a>
+            </nav>
+        </div>
+
+        <!-- Clears the float. -->
+        <div class="clearfix"></div>
+
+        <!-- Main content containing information regarding HIIT and steady-state cardio. -->
+        <div class="mainContent">
+            <h1>Health & Fitness</h1><br>
+            <p>Want to know more about HIIT and steady-state cardio? Check out these websites:</p>
+
+            <button id="dropdown">Show Websites +</button>
+            <br><br>
+            <div id="dropdownItems">
+                <a href="https://experiencelife.lifetime.life/article/steady-state-cardio-vs-high-intensity-interval-training/">Steady-State Cardio vs. High-Intensity Interval Training | Experience Life</a><br>
+                <a href="https://www.myzone.org/blog/myzone/hiit-ratios-and-how-to-use-them">HIIT Ratios and how to use them | MyZone</a><br>
+                <a href="https://www.healthline.com/health/how-much-cardio-to-lose-weight">How to lose weight with cardiovascular exercise | Healthline</a>
+            </div>
+
+            
+            <h2>The Cardio</h2>
+            <p>
+                One's choice in cardio is typically flexible as you can do any exercise(s) of your choice that can sustain 
+                your heart rate above a certain threshold for a certain period of time. Cardio can be divided into two categories:
+            </p>
+
+            <ul>
+                <li>High-Intensity Interval Training (HIIT)</li>
+                <li>Steady-State Cardio</li>
+            </ul>
+
+            <div id="cardio_1">
+                <!-- Information about HIIT cardio. -->
+                <h3>HIIT</h3>
+                <p>
+                    HIIT is a type of cardio that is performed explosively. With this type of cardio, one should aim to keep their 
+                    heart rate above 80% of their max heart rate. It can be performed with any type of exercise where one can sustain 
+                    such a heart rate for short bursts of time. These workouts are generally shorter than steady-state cardio workouts. 
+                    For optimal results, total workout time can range from 10 to 30 minutes including warm-up and cooldown depending 
+                    on the intensity at which the workout is performed. Examples include sprints, burpees, box jumps, bodyweight 
+                    squats, skipping, etc.
+                </p>
+            </div>
+            <!-- This is like indicator image that appears whenever the cardio_1 div item on the page is liked. -->
+            <div id="cardioLike1" class="likedImg">
+                <br>
+                <span>Liked <img class="like_img" src="./YouTube-Like-Logo-PNG-Pic.png" alt="thumbs_up"></span>
+                <br>
+            </div>
+            <br>
+            <!-- This is the like button for the cardio_1 div item. -->
+            <button id="btnLikeCardio1">Like</button>
+            <!-- Save For Later button saves the cardio_1 to the Saved Items page. -->
+            <button id="saveCardio1">Save For Later</button>
+
+            <div id="cardio_2">
+                <!-- Information about steady-state cardio. -->
+                <h3>Steady-State Cardio</h3>
+                <p>
+                    Steady-state cardio is generally low to moderate intensity cardio that is performed over a longer period of time. 
+                    With steady-state, one should aim to maintain a heart rate between 60% to 80% of their max heart rate. For optimal 
+                    results, total workout can range from 30 to 45 minutes. Examples include jogging, swimming, cycling, rowing, 
+                    elliptical machine, stepping machine, etc.
+                </p>
+            </div>
+            <!-- This is like indicator image that appears whenever the cardio_2 div item on the page is liked. -->
+            <div id="cardioLike2" class="likedImg">
+                <br>
+                <span>Liked <img class="like_img" src="./YouTube-Like-Logo-PNG-Pic.png" alt="thumbs_up"></span>
+                <br>
+            </div>
+            <br>
+            <!-- This is the like button for the cardio_2 div item. -->
+            <button id="btnLikeCardio2">Like</button>
+            <!-- Save For Later button saves the cardio_2 to the Saved Items page. -->
+            <button id="saveCardio2">Save For Later</button>
+
+            <h2>Comment Section</h2>
+            <br>
+            <!-- Form enabling user to add comments to the page. -->
+            <form>
+                <label for="userName">Name:</label>
+                <input type="text" name="userName" id="userName" placeholder="Enter your name..." required><br><br>
+                <label for="userComment">What did you think of the article?</label><br><br>
+                <textarea name="userComment" id="userComment" rows="4" cols="50" placeholder="Write a comment..." required></textarea><br><br>
+                <button id="submitComment">Add Comment</button><br><br>
+            </form>
+
+            <h3>Comments:</h3>
+            <br>
+            <!-- Any user added comments are appended here. -->
+            <div id="commentSection"></div>
+
+        </div>
+    </body>
+</html>
+
+<!--
+    References:
+
+    How to create a textarea:
+    - https://www.w3schools.com/tags/tag_textarea.asp
+-->

@@ -1,0 +1,184 @@
+* {
+    // All element margins and padding set to default of 0px.
+    margin:0px;
+    padding:0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background-color:rgb(230, 230, 230);
+    text-align:justify;
+    position:relative;
+
+    .clearfix {
+        clear: both; // Clears the float (i.e. left and right).
+    }
+
+    hr {
+        margin: 20px 0px;
+    }
+
+    h2 {
+        padding-top: 20px;
+    }
+
+    h3 {
+        padding-top: 20px;
+    }
+
+    p {
+        padding:20px 0px;
+    }
+
+    .navbar {
+        font-size: 23px;
+        background-color: orange;
+        width: 100%;
+        height: 50px;
+        position:fixed; // Fixes navigation bar to the top of the screen even when scrolling.
+        
+        img {
+            height: 50px; // Image is the same height as the navigation bar in order to fit perfectly.
+            float: left;
+        }
+
+        a {
+            width: 15%;
+            height: 50px; // Makes links same height as navigation bar.
+            float: left;
+            color: white;
+            text-decoration: none; // Removes underline from links in navigation bar.
+            box-sizing: border-box; // Allocates each link with width 15% (including padding) of the container space.
+            padding: 10px 30px;
+            border-left: lightgrey solid 2px;
+            text-align: center;
+        }
+
+        a:hover {
+            // Link turns black and lifts up 2px when hovered over by mouse.
+            color:#333;
+            padding-top: 8px;
+            padding-bottom: 12px;
+        }
+    }
+
+    .mainContent {
+        padding-top: 80px; // Ensures that the navigation bar does not overlap the main content.
+        margin:50px;
+        margin-top: 0px;
+
+        textarea {
+            padding:5px;
+        }
+
+        input {
+            padding: 3px;
+        }
+
+        button {
+            padding: 3px;
+        }
+
+        img {
+            // Every image in the main content has a grey border and takes up 30% of it container width.
+            border-style: solid;
+            border-width: 4px;
+            border-color: grey;
+            width:30%;
+
+        }
+
+        span{
+            margin:30px 0px;
+            font-size: 22px;
+            font-family: cursive;
+            width:100%;
+
+            .like_img {
+                border-style: none;
+                width: 25px;
+            }
+        }
+
+        figure {
+            padding: 10px 0px;
+
+            figcaption {
+                // This is format for the image caption.
+                font-size: 15px;
+                font-style: italic;
+            }
+        }
+
+        table {
+            border-style: solid;
+            border-width: 2px;
+            border-color: grey;
+            border-collapse: collapse; // Ensures each cell in the table does not have a second border.
+            margin: 20px 0px;
+            
+            th, td {
+                border-style: solid;
+                border-width: 2px;
+                border-color: grey;
+                padding: 5px 10px;
+            }
+
+            th {
+                background-color: lightgray; // Light grey background colour for table heading.
+            }
+        }
+
+        .quotes {
+            // Rounded quotes block has a light grey background with a grey border line on the left and bottom.
+            padding: 30px 0px;
+            border-left: grey solid 4px;
+            border-bottom: grey solid 4px;
+            border-radius: 30px;
+            padding-left: 30px;
+            background-color: lightgrey;
+        }
+
+        #commentSection {
+            // Rounded quotes block has a light grey background with a grey border line on the left and bottom.
+            padding: 30px 0px;
+            padding-top: 45px;
+            border-left: grey solid 4px;
+            border-bottom: grey solid 4px;
+            border-radius: 30px;
+            padding-left: 30px;
+            background-color: lightgrey;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .newsletter {
+            // Rounded newsletter block with solid grey border and light grey background colour.
+            border-style: solid;
+            border-radius: 30px;
+            border-color: grey;
+            padding:40px;
+            margin-top:30px;
+            background-color: lightgrey;
+        }
+
+        a {
+            color:orangered;
+            text-decoration: none; // Removes underline from links in main content.
+        }
+
+        a:hover {
+            color:#333; // Links in main content turn black when hovered over.
+        }
+    }
+}
+
+/*
+    References:
+    How the border-collapse feature works - https://www.w3schools.com/cssref/pr_border-collapse.asp
+    How to use the position property - https://www.w3schools.com/cssref/pr_class_position.asp
+    How to style tables - https://www.w3schools.com/css/css_table.asp
+*/

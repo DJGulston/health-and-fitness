@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Nutrition</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="./stylesheet.css" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="./health_and_fitness.js"></script>
+    </head>
+
+    <body>
+        <!-- Navigation bar containing links to different webpages of the website. -->
+        <div class="navbar">
+            <img src="https://cutewallpaper.org/24/dumbbell-png/bodybuilding-and-dumbbells-vector-image-illustration-dumbbell-clipart-no-background-png-download-542135-pinclipart.png" alt="Dumbbell PNG">
+            
+            <nav>
+                <a href="./index.html">Weights</a>
+                <a href="./cardio.html">Cardio</a>
+                <a href="./nutrition.html">Nutrition</a>
+                <a href="./contact_us.html">Contact Us</a>
+                <a href="./save_for_later.html">Saved Items</a>
+            </nav>
+        </div>
+
+        <!-- Clears the float. -->
+        <div class="clearfix"></div>
+
+        <!-- Main content containing links to external nutrition websites and information regarding macro and micronutrients. -->
+        <div class="mainContent">
+            <h1>Health & Fitness</h1><br>
+            <p>If you would like to read more about nutrition, check out these websites:</p>
+
+            <button id="dropdown">Show Websites +</button>
+            <br><br>
+            <div id="dropdownItems">
+                <a href="https://www.getsmarter.com/blog/market-trends/what-are-macronutrients-and-micronutrients/">What are macronutrients and micronutrients? | GetSmarter</a><br>
+                <a href="https://www.betterhealth.vic.gov.au/health/healthyliving/protein">Protein | BetterHealth</a><br>
+                <a href="https://www.healthline.com/nutrition/12-healthy-high-carb-foods">Healthy High Carb Foods | Healthline</a><br>
+                <a href="https://www.healthline.com/nutrition/10-super-healthy-high-fat-foods">Healthy High Fat Foods | Healthline</a><br>
+            </div>
+
+
+            <h2>The Nutrition</h2>
+            <div id="nutrition_1">
+                <p>
+                    Nutrition is an essential part to achieving your fitness goals. One must ensure they are getting the correct
+                    micronutrients and macronutrients. Macronutrients are divided into 3 categories:
+                </p>
+    
+                <!-- Macronutrients list. -->
+                <ul>
+                    <li>Protein</li>
+                    <li>Carbohydrates</li>
+                    <li>Fat</li>
+                </ul>
+            </div>
+            <!-- This is like indicator image that appears whenever the nutrition_1 div item on the page is liked. -->
+            <div id="nutritionLike1" class="likedImg">
+                <br>
+                <span>Liked <img class="like_img" src="./YouTube-Like-Logo-PNG-Pic.png" alt="thumbs_up"></span>
+                <br>
+            </div>
+            <br>
+            <!-- This is the like button for the nutrition_1 div item. -->
+            <button id="btnLikeNutrition1">Like</button>
+            <!-- Save For Later button saves the nutrition_1 to the Saved Items page. -->
+            <button id="saveNutrition1">Save For Later</button>
+
+            <div id="nutrition_2">
+                <!-- Macronutrients table. -->
+                <table>
+                    <tr>
+                        <th>Macronutrients</th>
+                        <th>Examples</th>
+                    </tr>
+
+                    <tr>
+                        <td>Protein</td>
+                        <td>Lean beef, chicken, fish, eggs, cottage cheese, milk.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Carbohydrates</td>
+                        <td>Oats, bananas, rice, potatoes, oranges, blueberries, beans.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Fats</td>
+                        <td>Avocado, fish, nuts, cheese, milk, eggs, yoghurt.</td>
+                    </tr>
+                </table>
+            </div>
+            <!-- This is like indicator image that appears whenever the nutrition_2 div item on the page is liked. -->
+            <div id="nutritionLike2" class="likedImg">
+                <br>
+                <span>Liked <img class="like_img" src="./YouTube-Like-Logo-PNG-Pic.png" alt="thumbs_up"></span>
+                <br>
+            </div>
+            <br>
+            <!-- This is the like button for the nutrition_2 div item. -->
+            <button id="btnLikeNutrition2">Like</button>
+            <!-- Save For Later button saves the nutrition_2 to the Saved Items page. -->
+            <button id="saveNutrition2">Save For Later</button>
+
+            <div id="nutrition_3">
+                <p>
+                    Micronutrients are divided into 2 categories:
+                </p>
+                
+                <!-- Micronutrients list. -->
+                <ul>
+                    <li>Vitamins</li>
+                    <li>Minerals</li>
+                </ul>
+            </div>
+            <!-- This is like indicator image that appears whenever the nutrition_3 div item on the page is liked. -->
+            <div id="nutritionLike3" class="likedImg">
+                <br>
+                <span>Liked <img class="like_img" src="./YouTube-Like-Logo-PNG-Pic.png" alt="thumbs_up"></span>
+                <br>
+            </div>
+            <br>
+            <!-- This is the like button for the nutrition_3 div item. -->
+            <button id="btnLikeNutrition3">Like</button>
+            <!-- Save For Later button saves the nutrition_3 to the Saved Items page. -->
+            <button id="saveNutrition3">Save For Later</button>
+
+            <h2>Comment Section</h2>
+            <br>
+            <!-- Form enabling user to add comments to the page. -->
+            <form>
+                <label for="userName">Name:</label>
+                <input type="text" name="userName" id="userName" placeholder="Enter your name..." required><br><br>
+                <label for="userComment">What did you think of the article?</label><br><br>
+                <textarea name="userComment" id="userComment" rows="4" cols="50" placeholder="Write a comment..." required></textarea><br><br>
+                <button id="submitComment">Add Comment</button><br><br>
+            </form>
+
+            <h3>Comments:</h3>
+            <br>
+            <!-- Any user added comments are appended here. -->
+            <div id="commentSection"></div>
+
+        </div>
+    </body>
+</html>
+
+<!--
+    References:
+    How to create tables - https://www.w3schools.com/html/html_tables.asp
+
+    How to create a textarea:
+    - https://www.w3schools.com/tags/tag_textarea.asp
+
+-->

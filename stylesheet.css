@@ -1,0 +1,178 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  background-color: #e6e6e6;
+  text-align: justify;
+  position: relative;
+}
+
+body .clearfix {
+  clear: both;
+}
+
+body hr {
+  margin: 20px 0px;
+}
+
+body h2 {
+  padding-top: 20px;
+}
+
+body h3 {
+  padding-top: 20px;
+}
+
+body p {
+  padding: 20px 0px;
+}
+
+body .navbar {
+  font-size: 23px;
+  background-color: orange;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+}
+
+body .navbar img {
+  height: 50px;
+  float: left;
+}
+
+body .navbar a {
+  width: 15%;
+  height: 50px;
+  float: left;
+  color: white;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 30px;
+  border-left: lightgrey solid 2px;
+  text-align: center;
+}
+
+body .navbar a:hover {
+  color: #333;
+  padding-top: 8px;
+  padding-bottom: 12px;
+}
+
+body .mainContent {
+  padding-top: 80px;
+  margin: 50px;
+  margin-top: 0px;
+}
+
+body .mainContent textarea {
+  padding: 5px;
+}
+
+body .mainContent input {
+  padding: 3px;
+}
+
+body .mainContent button {
+  padding: 3px;
+}
+
+body .mainContent img {
+  border-style: solid;
+  border-width: 4px;
+  border-color: grey;
+  width: 30%;
+}
+
+body .mainContent span {
+  margin: 30px 0px;
+  font-size: 22px;
+  font-family: cursive;
+  width: 100%;
+}
+
+body .mainContent span .like_img {
+  border-style: none;
+  width: 25px;
+}
+
+body .mainContent figure {
+  padding: 10px 0px;
+}
+
+body .mainContent figure figcaption {
+  font-size: 15px;
+  font-style: italic;
+}
+
+body .mainContent table {
+  border-style: solid;
+  border-width: 2px;
+  border-color: grey;
+  border-collapse: collapse;
+  margin: 20px 0px;
+}
+
+body .mainContent table th, body .mainContent table td {
+  border-style: solid;
+  border-width: 2px;
+  border-color: grey;
+  padding: 5px 10px;
+}
+
+body .mainContent table th {
+  background-color: lightgray;
+}
+
+body .mainContent .quotes {
+  padding: 30px 0px;
+  border-left: grey solid 4px;
+  border-bottom: grey solid 4px;
+  border-radius: 30px;
+  padding-left: 30px;
+  background-color: lightgrey;
+}
+
+body .mainContent #commentSection {
+  padding: 30px 0px;
+  padding-top: 45px;
+  border-left: grey solid 4px;
+  border-bottom: grey solid 4px;
+  border-radius: 30px;
+  padding-left: 30px;
+  background-color: lightgrey;
+}
+
+body .mainContent ul {
+  padding-left: 20px;
+}
+
+body .mainContent .newsletter {
+  border-style: solid;
+  border-radius: 30px;
+  border-color: grey;
+  padding: 40px;
+  margin-top: 30px;
+  background-color: lightgrey;
+}
+
+body .mainContent a {
+  color: orangered;
+  text-decoration: none;
+}
+
+body .mainContent a:hover {
+  color: #333;
+}
+
+/*
+    References:
+    How the border-collapse feature works - https://www.w3schools.com/cssref/pr_border-collapse.asp
+    How to use the position property - https://www.w3schools.com/cssref/pr_class_position.asp
+    How to style tables - https://www.w3schools.com/css/css_table.asp
+*/
+/*# sourceMappingURL=stylesheet.css.map */

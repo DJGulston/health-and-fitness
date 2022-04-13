@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Nutrition</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="./stylesheet.css" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="./health_and_fitness.js"></script>
+    </head>
+
+    <body>
+        <!-- Navigation bar containing image and links to different webpages of the website. -->
+        <div class="navbar">
+            <img src="https://cutewallpaper.org/24/dumbbell-png/bodybuilding-and-dumbbells-vector-image-illustration-dumbbell-clipart-no-background-png-download-542135-pinclipart.png" alt="Dumbbell PNG">
+            
+            <nav>
+                <a href="./index.html">Weights</a>
+                <a href="./cardio.html">Cardio</a>
+                <a href="./nutrition.html">Nutrition</a>
+                <a href="./contact_us.html">Contact Us</a>
+                <a href="./save_for_later.html">Saved Items</a>
+            </nav>
+        </div>
+
+        <!-- Clears the float. -->
+        <div class="clearfix"></div>
+
+        <!-- Main content containing quotes and newsletter subscription form. -->
+        <div class="mainContent">
+            <h1>Health & Fitness</h1><br>
+            <p>
+                We love getting in touch with our readers. If you would love to know more about getting healthier reaching your 
+                fitness goals, please subscribe below to our newsletter for helpful tips on training and nutrition below. Also, 
+                check out what others have said about our monthly newsletters:
+                <br><br>
+            </p>
+            <!-- Quotes block -->
+            <div class="quotes">
+                <q>Dean's monthly newsletters are so informative and super awesome! He helped me get super swole!</q><br>
+                &mdash; <i>Mahatma Gandhi, 1908.</i>
+                <br><br>
+                <q>Dean's newsletters are so dope! 10/10 would subscribe again!</q><br>
+                &mdash; <i>Nelson Mandela, 1996.</i>
+                <br><br>
+                <q>I'm just here for the free coupons.</q><br>
+                &mdash; <i>Eminem, 2005.</i>
+            </div>
+
+            <!-- Newsletter block containing form. -->
+            <div class="newsletter">
+                <h2>The Newsletter</h2><br>
+                <form>
+                    <!-- Text fields for name and email address. -->
+                    <label for="full_name">Full Name:</label><br>
+                    <input type="text" id="full_name" name="fullName" placeholder="Enter your name..." required><br><br>
+                    
+                    <label for="email_address">Email Address:</label><br>
+                    <input type="text" id="email_address" name="emailAddress" placeholder="Enter your email address..." required><br><br>
+
+                    <p>Please let us know what type of newsletter you would like to receive:</p>
+                    
+                    <!-- Radio buttons with group name "newsletter". -->
+                    <input type="radio" id="bodybuilding" name="newsletter" value="Bodybuilding" required>
+                    <label for="bodybuilding">Bodybuilding</label><br>
+                    
+                    <input type="radio" id="powerlifting" name="newsletter" value="Powerlifting" required>
+                    <label for="powerlifting">Powerlifting</label><br>
+                    
+                    <input type="radio" id="steadyState" name="newsletter" value="Steady State Cardio" required>
+                    <label for="steadyState">Steady State Cardio</label><br>
+                    
+                    <input type="radio" id="hiit" name="newsletter" value="HIIT" required>
+                    <label for="hiit">HIIT</label><br>
+                    
+                    <input type="radio" id="nutrition" name="newsletter" value="Nutrition" required>
+                    <label for="nutrition">Nutrition</label><br><br>
+                    
+                    <!-- Submit button. -->
+                    <input id="subscribe" type="submit" value="Subscribe">
+                </form>
+            </div>
+
+            <!-- Form enabling user to send an email to the site creator. -->
+            <div class="newsletter">
+                <h2>Email Us</h2>
+                <p>Want to contact us? Send us an email and we will get back to you!</p>
+                <br>
+                <form>
+                    <label for="subject">Subject:</label>
+                    <input id="subject" type="text" name="subject" placeholder="Subject..."><br><br>
+
+                    <label for="body">Body:</label><br>
+                    <textarea id="body" name="body" rows="10" cols="50" placeholder="Write an email..."></textarea><br><br><br>
+
+                    <input id="sendEmail" type="submit" value="Send Email">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
+
+<!--
+    References:
+
+    How to create a textarea:
+    - https://www.w3schools.com/tags/tag_textarea.asp
+-->
